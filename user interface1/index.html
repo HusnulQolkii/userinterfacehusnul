@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ini  user interface husnul</title>
+    <link rel="icon" href="web.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <div>
+            <div class="form-husnul" id="main">
+                <div class="sign-up">
+                    <form action="#">
+                        <h1>create account</h1>
+                        <div class="tabel1">
+                            <a href="#" class="sosail"><i class="fab fa-facebook-f"> </i></a>
+                            <a href="#" class="sosail"><i class="fab fa-google-plus-g"> </i></a>
+                            <a href="#" class="sosail"><i class="fab fa-linkedin-in"> </i></a>
+                        </div>
+                        <p>masukan akun anda</p>
+                        <input type="text" name="txt" placeholder="name" required="">
+                        <input type="email" name="email" placeholder="email" required="">
+                        <input type="password" name="pswd" placeholder="password" required="">
+                        <button>sign up</button>
+                    </form>
+                </div>
+                <div class="sign-in">
+                    <form action="#">
+                        <h1>sign in</h1>
+                        <div class="tabel1">
+                            <a href="#" class="sosail"><i class="fab fa-facebook-f"> </i></a>
+                            <a href="#" class="sosail"><i class="fab fa-google-plus-g"> </i></a>
+                            <a href="#" class="sosail"><i class="fab fa-linkedin-in"> </i></a>
+                        </div>
+                        <p>masukan akun anda</p>
+                        <input type="email" name="email" placeholder="email" required="">
+                        <input type="password" name="pswd" placeholder="password" required="">
+                        <a href="#">lupa password?</a>
+                        <button>sign up</button>
+                    </form>
+                </div>
+                <div class="masuk"> 
+                    <div class="masukk">
+                        <div class="overlay-left">
+                            <h1>selamat datang</h1>
+                            <p>please login dengan akun anda</p>
+                            <button id="signIn">sign in</button>
+                        </div>
+                        <div class="overlay-right">
+                            <h1>Hallo semua</h1>
+                            <p>join bosku</p>
+                            <button id="signUp">sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script type="text/javascript">
+        const signUpbutton = document.getElementById('signUp')
+        const signInbutton = document.getElementById('signIn')
+        const main = document.getElementById('main')
+
+        signUpbutton.addEventListener('click',() => {
+            main.classList.add("right-panel-activate");
+        });
+        signInbutton.addEventListener('click',() => {
+            main.classList.remove("right-panel-activate");
+        });
+    </script>
+</body>
+</html>
